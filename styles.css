@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url("../Assets/bg.svg");
+    background-image: url("./Yash-Assets/bg.svg");
     overflow-x: hidden;
 }
 
@@ -18,38 +18,121 @@ html::-webkit-scrollbar-thumb {
 }
 
 .container {
-    width: 100vw;
+    /* width: 100%; */
     max-width: 1920px;
     margin: 0 auto;
 }
 
-hr {
-    margin: 3% 0 1%;
+.hr {
+    margin: 4% 0 0.5%;
     border: 1px solid black;
 }
 
 .things-to-do {
     display: flex;
     flex-direction: column;
-    padding: 2% 0;
+    padding: 3% 0;
 }
 
 .heading {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0% 3% 1.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.cards-container {
+@media screen and (min-width:784px) {
+    .heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1099px) {
+    .heading {
+        width: 70%;
+    }
+}
+
+.scroll-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    display: none;
+}
+
+@media screen and (min-width:991px) and (max-width:1099px) {
+    .scroll-btn {
+        display: block;
+    }
+}
+
+.scroll-btn button {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 3rem;
+    color: #035e88;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px #0000003d;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+}
+
+.scroll-btn button:hover {
+    color: white;
+}
+
+.scroll-btn .left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transition: left 0.3s ease-in-out;
+    background-color: #035e88;
+    z-index: -1;
+}
+
+.scroll-btn .right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    transition: right 0.3s ease-in-out;
+    background-color: #035e88;
+    z-index: -1;
+}
+
+.scroll-btn .left:hover::before {
+    left: 0;
+}
+
+.scroll-btn .right:hover::before {
+    right: 0;
+}
+
+.cards-container-1 {
     padding: 0 4%;
     display: flex;
     gap: 2.5%;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
-.cards {
+.cards-1 {
     background-color: #035e88;
     width: 100%;
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,29 +142,42 @@ hr {
 
 }
 
-@media screen and (max-width: 480px) {
-    .cards {
-        width: 100%;
+@media screen and (min-width:480px) {
+    .cards-1 {
+        width: 50%;
     }
 }
 
-.image {
+@media screen and (min-width:764px) {
+    .cards-1 {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width:1199px) {
+    .cards-1 {
+        width: 23%;
+    }
+}
+
+.image-1 {
     overflow: hidden;
 }
 
-.image > img {
+.image-1 > img {
     width: 100%;
     cursor: pointer;
     object-fit: cover;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;transition: transform 1s ease-in-out;
+    border-top-right-radius: 5px;
+    transition: transform 1s ease-in-out;
 }
 
-.image > img:hover {
+.image-1 > img:hover {
     transform: scale(1.1);
 }
 
-.text {
+.text-1 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -89,44 +185,206 @@ hr {
     line-height: 2.5rem;
 }
 
-.text > h4 {
+.text-1 > h4 {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.text > a {
+.text-1 > a {
     text-decoration: none;
     font-size: 2.4rem;
     color: white;
 }
 
-.text > a:hover {
+.text-1 > a:hover {
     text-decoration: underline;
 }
 
-.text > p {
+.text-1 > p {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.btn {
+.btn-1 {
     margin: auto 6.6% 7%;
 }
 
-.btn > button {
+.btn-1 > button {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     width: fit-content;
-    padding: 4% 6%;
+    padding: 1.5% 6%;
     cursor: pointer;
 }
 
-.btn > button > a {
+.btn-1 > button > a {
     font-size: 1.6rem;
     text-decoration: none;
     color: white;
 }
+
+.what-happening {
+    width: 100%;
+    padding: 2% 6% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    position: relative;
+}
+
+@media screen and (min-width:1198px) {
+    .what-happening {
+        padding-left: 10%;
+        padding-right: 4%;
+    }
+}
+
+.what-happening::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 45%;
+    background-color: #035e88;
+    border-radius: 5px;
+    border-top-left-radius: 8rem;
+}
+
+@media screen and (min-width:1198px) {
+    .what-happening::before {
+        left: 4%;
+        right: 4%;
+    }
+}
+
+.what-happening h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+@media screen and (min-width:600px) {
+    .what-happening h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .what-happening h1 {
+        font-size: 4rem;
+    }
+}
+
+.dubai-24 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #fff;
+    border-top-left-radius: 8rem;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+    .dubai-24 {
+        flex-direction: row;
+    }
+}
+
+.image-2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .image-2 {
+        width: 35%;
+    }
+}
+
+.image-2 img {
+    width: 100%;
+    border-radius: 8rem 0 0 0;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.image-2 img:hover {
+    transform: scale(1.1);
+}
+
+.text-2 {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    color: black;
+}
+
+@media screen and (min-width:768px) {
+    .text-2 {
+        width: 50%;
+    }
+}
+
+.text-2 h4 {
+    color: #00000095;
+    font-size: 1.4rem;
+}
+
+.paras-1 a {
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .paras-1 a {
+        font-size: 2.4rem;
+    }
+}
+
+.paras-1 a:hover {
+    text-decoration: underline;
+}
+
+.paras-1 p {
+    color: #00000095;
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width:768px) {
+    .paras-1 p {
+        font-size: 1.6rem;
+    }
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-2 a {
+    color: #035e88;
+    text-decoration: none;
+    padding-top: 0.6rem;
+}
+
+.btn-2 a:hover {
+    text-decoration: underline;
+}
+
+.btn-2 i {
+    color: #035e88;
+    font-size: 1.4rem;
+}
+
 /* Jeet CSS for Footer */
 .main-container {
     background: #035e88;
