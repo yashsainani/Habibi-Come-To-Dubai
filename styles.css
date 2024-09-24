@@ -674,6 +674,346 @@ html::-webkit-scrollbar-thumb {
     font-size: 1.6rem;
 }
 
+.be-inspired {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7% 5%;
+    gap: 2rem;
+}
+
+.be-inspired h1 {
+    font-size: 3rem;
+}
+
+.cards-container-4 {
+    display: flex;
+    gap: 5%;
+    padding: 0 1%;
+    overflow-x: scroll;
+    scrollbar-color: #0000004b transparent;
+}
+
+.cards-4 {
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 1% 2%;
+}
+
+@media screen and (min-width:992px) {
+    .cards-4 {
+        flex-direction: row;
+    }
+}
+
+.image-container-1 {
+    display: flex;
+    gap: 0.5%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.image-4 {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.image-4 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5rem;
+    box-shadow: 0px 0px 2px 2px #0000003d;
+}
+
+.image-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8%;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.image-5 img {
+    object-fit: cover;
+    width: 100%;
+    height: 49.5%;
+    box-shadow: 0px 0px 2px 2px #0000003d;
+}
+
+.text-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4% 0;
+    gap: 5rem;
+}
+
+.text-3 h4 {
+    color: #00000095;
+    font-size: 2rem;
+}
+
+.text-3 p {
+    font-size: 2rem;
+    color: #00000095;
+}
+
+.paras-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.paras-2 a {
+    color: #000;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.paras-2 a:hover {
+    text-decoration: underline;
+}
+
+.paras-2 p {
+    font-size: 2rem;
+    color: #00000095;
+}
+
+.more-2 {
+    padding: 0 3%;
+}
+
+.more-2 a {
+    color: #035e88;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 0.5%;
+}
+
+.more-2 a:hover {
+    text-decoration: underline;
+}
+
+.more-2 i {
+    font-size: 1.8rem;
+    color: #035e88;
+    padding-top: 0.5%;
+}
+
+.find-things, .events {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2% 7%;
+}
+
+.find-things h1, .events h1 {
+    font-size: 3rem;
+}
+
+.nav-1 {
+    padding: 2%;
+    overflow-x: scroll;
+    scrollbar-color: #0000004b transparent;
+}
+
+@media screen and (min-width:989px) {
+    .nav-1 {
+        scrollbar-color: transparent transparent;
+    }
+}
+
+.nav-1 ul {
+    display: flex;
+    gap: 1.1%;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.nav-1 ul li {
+    background-color: whitesmoke;
+    padding: 0.5% 1.5%;
+    flex: 0 0  auto;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-1 ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #00000095;
+    transition: right 0.5s ease-in-out;
+}
+
+.nav-1 ul li:hover::after {
+    right: 0;
+}
+
+.nav-1 ul li a {
+    color: #00000095;
+    font-size: 2rem;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-1 ul li:hover a {
+    color: #fff;
+}
+
+.nav-1 ul li:first-child {
+    background-color: #00000095;
+}
+
+.nav-1 ul li:first-child a {
+    color: #fff;
+}
+
+.cards-container-5 {
+    display: flex;
+    gap: 2%;
+    padding: 1% 2%;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+
+
+.cards-5 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+@media screen and (min-width:480px) {
+    .cards-5 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .cards-5 {
+        width: 30%;
+    }
+}
+
+.cards-5 img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.text-4 {
+    display: flex;
+    padding: 0 0 0 2%;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.text-4 button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px #00000095;
+    width: 60px;
+    height: 60px;
+    color: #035e88;
+    position: relative;
+    top: -5rem;
+    left: 70%;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.6rem;
+}
+
+.text-4 button:hover {
+    color: #fff;
+}
+
+.text-4 button::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #035e88;
+    transition: top 0.3s ease-in-out;
+}
+
+.text-4 button:hover::after {
+    top: 0;
+}
+
+.text-4 h4 {
+    font-size: 2rem;
+    color: #00000095;
+    margin-top: -10%;
+}
+
+.text-4 a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: black;
+}
+
+.text-4 a:hover {
+    text-decoration: underline;
+}
+
+.text-4 p {
+    font-size: 1.6rem;
+    color: #00000095;
+}
+
+.text-4 h5 {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.remind {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    color: #035e88;
+    margin: 2% 0;
+    position: relative;
+}
+
+.remind i {
+    cursor: pointer;
+}
+
+.remind p {
+    font-size: 2rem;
+    color: #035e88;
+    cursor: pointer;
+}
+
+.right-plus {
+    position: absolute;
+    right: 1.5rem;
+}
+
 /* Jeet CSS for Footer */
 .main-container {
     background: #035e88;
