@@ -1,0 +1,21 @@
+.main-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #505050;
+}
+.header-hr{
+    border: 2px solid #000;
+}
+.title {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.title hr {
+    /* padding-top: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+}
+.left-notice, .privacy h4, h1 {
+    color: #000;
+}

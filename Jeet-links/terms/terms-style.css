@@ -1,0 +1,46 @@
+.container {
+    padding-left: 15%;
+    padding-right: 15%; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.top-trerms {
+    display: flex;
+
+
+}
+.terms-heading {
+    font-weight: 550;
+    font-size: 1.7rem;
+}
+.terms-para {
+    font-size: 0-.9rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    
+
+}   
+.jump-link img {
+    transform: rotate(45deg);
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.jump-link {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li a {
+    color: #505050;
+    font-size: .7rem;
+ 
+}
+.background-para, .Other-para, .Age-restriction, .Accessing, .Intellectual, .Disclaimer, .Dubai, .contacts p {
+    color: #505050;
+    font-size: .8rem;
+
+}
+h3 {
+    color: #000;
+}
