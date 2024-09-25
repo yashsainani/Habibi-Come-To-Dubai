@@ -37,7 +37,18 @@
    grid-template-rows:50px 50px 50px 50px 50px 50px;
    
  }
- 
+ @media only screen and (max-width:927px) {
+    .locators{
+        grid-template-columns:300px 300px;
+   grid-template-rows:50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    }
+}
+    @media only screen and (max-width:680px) {
+        .locators{
+            grid-template-columns:300px;
+       grid-template-rows:50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+        }
+}
  .planahead{
      font-size: 32px;
      line-height: 32px;
@@ -62,18 +73,18 @@
  .item-1{
      overflow: hidden;
      border-radius: 2% 2%;
-     height: 400px;
      text-align: start;
      font-size: 20px;
      color: #ffffff;
      background-color: #035e88;
      width: 249px;
-     height: 439px;
+     height: 480px;
  }
  .item-2{
+    border-radius: 2% 2%;
      overflow: hidden;
      width: 249px;
-     height: 439px;
+     height: 480px;
      text-align: start;
      font-size: 20px;
      color: #ffffff;
@@ -81,9 +92,10 @@
  
  }
  .item-3{
+    border-radius: 2% 2%;
      overflow: hidden;
      width: 249px;
-     height: 439px;
+     height: 480px;
      text-align: start;
      font-size: 20px;
      color: #ffffff;
@@ -91,9 +103,10 @@
      
  }
  .item-4{
+    border-radius: 2% 2%;
      overflow: hidden;
      width: 249px;
-     height: 439px;
+     height: 480px;
      text-align: start;
      font-size: 20px;
      color: #ffffff;
@@ -111,6 +124,20 @@
      padding-left: 10px;
      padding-right: 10px;
  }
+ .desc{
+    padding: 10px 10px 10px 10px;
+ }
+ .text-area{
+    padding-top: 20px;
+ }
+
+
+@media only screen and (max-width:920px) {
+    .items{
+        flex-direction: column;
+    }
+}
+
  .planahead{
      padding: 20px,20px,20px,20px;
  }
@@ -135,38 +162,43 @@
      border: 2x solid #9c2677;
      }
  .button{
+    
      margin-left: 20px;
      width: 150px;
      height: 46px;
-     padding: 0px,0px,12px,0px;
      border: 2px solid #f5f5f5;
      color:#ffffff;
      background-color: #035e88;
      font-family: Dubai, Arial, sans-serif;
      padding: 10px 21px 10px 21px;
  }
+ .button-2{
+    margin-top: 10px;
+ }
  .button:hover{
      transform: scale(1.1);
  }
- .weather{  
+ .weather{ 
+    display: flex;
+     justify-content:flex-start;
+     align-items: center; 
      margin-left:50px;
      width: 100%;
      height: 257px; 
      font-family: Dubai, Arial, sans-serif;
      background-color: #f5f5f5;
-     display: flex;
-     justify-content:space-between;
+     
      column-gap: 20px;
      
-     
+   
      
  }
  .parameters{
-     margin-right: px;
+    
      margin-top: 90px;
      display: flex;
- justify-items: center;
- align-self: center;
+ justify-items:flex-start;
+ justify-content: space-evenly;
  
  
  }
@@ -243,14 +275,14 @@
  }
  
  .banner{
-     width: 1116px;
+     width: 1300px;
      height: 538px;
      display: flex;
      justify-content: center;
      padding-right: 10px;
      padding-left: 80px;
      .offer{
-         width:800px;
+         width: 950px;
          color: #ffffff;
          margin-top: 50px;
      background-color: #9c2677;
@@ -270,4 +302,25 @@
      }
  
  }
+ @media only screen and (max-width:920px) {
+    .banner{
+        width: 300px;
+        margin-top: 200px;
+        flex-direction: column;
+    }
+   
+}
+@media only screen and (max-width:920px) {
+    .weather{
+        width: 300px;
+        margin-top: 200px;
+        flex-direction: column;
+    }
+   
+}
+.learn{
+    margin-top: 50px;
+    color: #035e88;
+
+}
  /*Nimesh work ends here */
