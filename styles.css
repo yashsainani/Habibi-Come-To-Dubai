@@ -5,6 +5,7 @@
 }
 /* Nimesh work */
 .nimesh-container{
+    width: 100% ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,41 +16,93 @@
      font-family: Dubai,Arial, Helvetica, sans-serif;
      font-size: 32px;
      color: #000000;
-     width: 910px;
+     width: 100%;
      height: 32px;
      margin-bottom: 13px;
+     margin-left: 500px;
+ }
+ @media screen and (max-width:650px) {
+    .explore{
+        margin-left: 250px;
+        font-size: 20px;
+    }
+ }
+ @media screen and (max-width:510px) {
+    .explore{
+        margin-left: 0px;
+        font-size: 20px;
+    }
  }
  .city{
      font-family: Dubai,Arial, Helvetica, sans-serif;
      font-size: 20px;
      color: #505050;
-     width: 675px;
+     width: 100%;
      height: 24px;
      margin-bottom: 40px;
+     margin-left: 500px;
      text-align: left;
  }
- 
+ @media screen and (max-width:650px) {
+    .city{
+        margin-left: 250px;
+        font-size: 20px;
+    }
+ }
+ @media screen and (max-width:510px) {
+    .city{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+ }
+ .map{
+    width: 900px;
+    height: 550px;
+ }
+ @media screen and (max-width:950px) {
+    .map{
+        
+        padding-left: 0px;
+        width:800px;
+    }
+ }
+ @media screen and (max-width:810px) {
+    .map{
+        
+        padding-left: 0px;
+        width:600px;
+    }
+ }
+ @media screen and (max-width:620px) {
+    .map{
+        
+        padding-left: 0px;
+        width:350px;
+    }
+ }
  .locators{
+    width: 100%;
      cursor: pointer;
    display:grid;
    justify-content: center;
    grid-template-columns:300px 300px 300px;
-   grid-template-rows:50px 50px 50px 50px 50px 50px;
+   grid-template-rows: 50px 50px 50px 50px 50px 50px;
    
  }
- @media only screen and (max-width:927px) {
+ @media screen and (max-width:940px) {
     .locators{
-        grid-template-columns:300px 300px;
-   grid-template-rows:50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+grid-template-columns: 300px 300px;
+   grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px; 
     }
-}
-    @media only screen and (max-width:680px) {
-        .locators{
-            grid-template-columns:300px;
-       grid-template-rows:50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-        }
-}
+ }
+ @media screen and (max-width:620px) {
+    .locators{
+grid-template-columns: 300px;
+   grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px; 
+    }
+ }
  .planahead{
+    width: 100%;
      font-size: 32px;
      line-height: 32px;
      text-align: left;
@@ -61,7 +114,7 @@
  }
  
  .plan-heading{
-     width: 817px;
+     width:100%;
      height: 32px;
      font-family:Dubai,Arial, Helvetica, sans-serif;
      margin-left: 50px;
@@ -114,6 +167,7 @@
      
  }
  .items {
+    width: 100%;
      font-family: Dubai, Arial, sans-serif;
      cursor: pointer;
      display:flex; 
@@ -124,6 +178,12 @@
      padding-left: 10px;
      padding-right: 10px;
  }
+ @media screen and (max-width:720px) {
+    .items{
+        flex-wrap: wrap
+    }
+    
+ }
  .desc{
     padding: 10px 10px 10px 10px;
  }
@@ -131,14 +191,8 @@
     padding-top: 20px;
  }
 
-
-@media only screen and (max-width:920px) {
-    .items{
-        flex-direction: column;
-    }
-}
-
  .planahead{
+    width: 100%;
      padding: 20px,20px,20px,20px;
  }
  .img{
@@ -178,62 +232,96 @@
  .button:hover{
      transform: scale(1.1);
  }
- .weather{ 
+ .weather{
+    width:100%; 
+    height: 100%;
     display: flex;
      justify-content:flex-start;
      align-items: center; 
      margin-left:50px;
-     width: 100%;
      height: 257px; 
      font-family: Dubai, Arial, sans-serif;
      background-color: #f5f5f5;
      
      column-gap: 20px;
+     }
+  
      
-   
-     
- }
+ 
  .parameters{
-    
+    background-color: #f5f5f5;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
      margin-top: 90px;
      display: flex;
- justify-items:flex-start;
- justify-content: space-evenly;
+     justify-items:flex-start;
+    justify-content: space-evenly;
  
  
  }
+ @media screen and (max-width:1115px) {
+  
+    .parameters{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        
+    }
+ }
+ @media screen and (max-width:890px) {
+    .weather{
+    display: inline-block;
+    justify-content: left;
+    
+    }
+    .parameters{
+        width: 70%;
+        
+    }
+ }
+ @media screen and (max-width:390px) {
+    .weather{
+    display: inline-block;
+    margin-right: 0px;
+    
+    }
+    .parameters{
+        width: 70%;
+        
+    }
+ }
  .sunrise{
-     width: 90px;
+     width: 200%;
      height: 45px;
      padding-right: 20px;
  }
  .sunset{
-     width: 90px;
+    width: 200%;
      height: 45px;
      padding-right: 20px;
  }
  .low{
-     width: 90px;
+    width: 200%;
      height: 45px;
      padding-right: 20px;
  }
  .high{
-     width: 90px;
+    width: 200%;
      height: 45px;
      padding-right: 20px;
  }
  .humidity{
-     width: 90px;
+     width: 200%;
      height: 45px;
      padding-right: 20px;
  }
  .wind{
-     width: 90px;
+     width: 200%;
      height: 45px;
      padding-right: 20px;
  }
  .current-weather{
-     width: 1096px;
+     width: 700px;
      height: 32;
      font-size: 26px;
  }
@@ -264,9 +352,15 @@
      margin-top: 10px;
      
  }
+ .unit:hover{
+    cursor: pointer;
+ }
  
  .cel{
      margin-right: 23px;
+ }
+ .cel:hover{
+    cursor: pointer;
  }
  .line{
      border: 2x solid #9c2677;
@@ -281,43 +375,143 @@
      justify-content: center;
      padding-right: 10px;
      padding-left: 80px;
-     .offer{
-         width: 950px;
-         color: #ffffff;
-         margin-top: 50px;
-     background-color: #9c2677;
-     border-top-left-radius: 5%;
-     border-bottom-right-radius: 5%;
-     font-size: 32px;
+    
+     }
+      
      .buy{
-         color: #ffffff;
-         background-color: #9c2677;
-         width: 85px;
-         height:64px;
-         font-size: 16px;
-         border-radius: 2%;
-         border: 2x solid white;
-          margin: 60px 80px 60px 80px;
-     }
-     }
- 
- }
- @media only screen and (max-width:920px) {
-    .banner{
-        width: 300px;
-        margin-top: 200px;
-        flex-direction: column;
+        color: #ffffff;
+        background-color: #9c2677;
+        width: 85px;
+        height:64px;
+        font-size: 16px;
+        border-radius: 2%;
+        border: 2x solid white;
+         margin: 60px 80px 60px 80px;
     }
-   
-}
-@media only screen and (max-width:920px) {
-    .weather{
-        width: 300px;
-        margin-top: 200px;
-        flex-direction: column;
-    }
-   
-}
+     .offer{
+        width: 950px;
+        color: #ffffff;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    background-color: #9c2677;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    font-size: 32px;
+     }
+     .offer-text{
+     padding-left: 15px;
+     }
+      .ban-img{
+    width: 600px;
+    height: 538px;
+        
+      }
+      @media screen and (max-width:1115px) {
+        .banner{
+            padding-left: 40px;
+            width:1000px;
+            height: 638px;
+        }
+        .ban-img{
+            width: 400px;
+            height: 638px;    
+              }
+              .offer{
+                width: 400px;
+                    
+                  }
+      }
+      @media screen and (max-width:920px) {
+        .banner{
+            padding-left: 00px;
+            width:700px;
+            height: 738px;
+        }
+        .ban-img{
+            width: 700px;
+            height: 738px;    
+              }
+              .offer{
+                width: 700px;
+                    
+                  }
+      }
+      @media screen and (max-width:800px) {
+        .banner{
+            padding-left: 00px;
+            width:500px;
+            height: 738px;
+        }
+        .ban-img{
+            width: 500px;
+            height: 738px;    
+              }
+              .offer{
+                width: 500px;
+                    
+                  }
+      }
+      @media screen and (max-width:638px) {
+        .banner{
+            padding-left: 00px;
+            width:400px;
+            height: 738px;
+        }
+        .ban-img{
+            width: 400px;
+            height: 738px;    
+              }
+              .offer{
+                width: 400px;
+                    
+                  }
+      }
+      
+      @media screen and (max-width:800px) {
+        .banner{
+            padding-left: 00px;
+            width:500px;
+            height: 738px;
+        }
+        .ban-img{
+            width: 500px;
+            height: 738px;    
+              }
+              .offer{
+                width: 500px;
+                    
+                  }
+      }
+      @media screen and (max-width:535px) {
+        .banner{
+            padding-left: 00px;
+            width:300px;
+            height: 738px;
+        }
+        .ban-img{
+            width: 300px;
+            height: 738px;    
+              }
+              .offer{
+                width: 300px;
+                    
+                  }
+      }
+      @media screen and (max-width:430px) {
+        .banner{
+            padding-left: 00px;
+            width:200px;
+            height: 738px;
+        }
+        .ban-img{
+            width: 200px;
+            height: 738px;    
+              }
+              .offer{
+                width: 200px;
+                    
+                  }
+      }
 .learn{
     margin-top: 50px;
     color: #035e88;
