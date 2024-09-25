@@ -181,19 +181,19 @@ html::-webkit-scrollbar-thumb {
 .text-1 {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.4rem;
     padding: 0 6%;
     line-height: 2.5rem;
 }
 
 .text-1>h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .text-1>a {
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: white;
 }
 
@@ -202,7 +202,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 .text-1>p {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    word-spacing: 0.2rem;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -215,7 +216,7 @@ html::-webkit-scrollbar-thumb {
     border: 1px solid rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     width: fit-content;
-    padding: 1.5% 6%;
+    padding: 5% 8%;
     cursor: pointer;
 }
 
