@@ -1,55 +1,227 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main-container {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #505050;
-    background-color: #eeeeee;
+.container {
+    /* width: 100%; */
+    max-width: 1920px;
+    margin: 0 auto;
 }
-.privacy h1 {
-    font-size: 2.5rem;
-    padding-top: 2.2rem;
+
+.hr {
+    margin: 4% 0 0.5%;
+    border: 1px solid black;
 }
-.privacy p {
-    font-size: 1.8rem;
+
+.things-to-do {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
 }
-.left-notice h4 {
-    font-size: 2.0rem;
-    padding-left: 2rem;
-    color: #505050;
-}
-.header-hr{
-    border: 2px solid #505050;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.title {
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.title details {
+
+.heading {
     font-size: 2rem;
+    padding: 0% 3% 1.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-.title p {
+
+@media screen and (min-width:784px) {
+    .heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1099px) {
+    .heading {
+        width: 70%;
+    }
+}
+
+.scroll-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    display: none;
+}
+
+@media screen and (min-width:991px) and (max-width:1099px) {
+    .scroll-btn {
+        display: flex;
+    }
+}
+
+.scroll-btn button {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 3rem;
+    color: #035e88;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px #0000003d;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+}
+
+.scroll-btn button:hover {
+    color: white;
+}
+
+.scroll-btn .left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transition: left 0.3s ease-in-out;
+    background-color: #035e88;
+    z-index: -1;
+}
+
+.scroll-btn .right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    transition: right 0.3s ease-in-out;
+    background-color: #035e88;
+    z-index: -1;
+}
+
+.scroll-btn .left:hover::before {
+    left: 0;
+}
+
+.scroll-btn .right:hover::before {
+    right: 0;
+}
+
+.cards-container-1 {
+    padding: 0 4%;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 2.5%;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.cards-1 {
+    background-color: #035e88;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+@media screen and (min-width:480px) {
+    .cards-1 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:764px) {
+    .cards-1 {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width:1199px) {
+    .cards-1 {
+        width: 23%;
+    }
+}
+
+.image-1 {
+    overflow: hidden;
+}
+
+.image-1 > img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: transform 1s ease-in-out;
+}
+
+.image-1 > img:hover {
+    transform: scale(1.1);
+}
+
+.text-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 6%;
+    line-height: 2.5rem;
+}
+
+.text-1 > h4 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.text-1 > a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: white;
+}
+
+.text-1 > a:hover {
+    text-decoration: underline;
+}
+
+.text-1 > p {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-1 {
+    margin: auto 6.6% 7%;
+}
+
+.btn-1 > button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1.5% 6%;
+    cursor: pointer;
+}
+
+.btn-1 > button > a {
     font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
 }
-.title hr {
-    /* padding-top: 2rem; */
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    /* padding-bottom: 1rem; */
-}
-.left-notice, .privacy h4, h1 {
-    color: #000;
-}
+
+
+
+
+
+/* Jeet CSS for Footer */
 .for-flex {
     padding-left: 5%;
     padding-right: 5%; 
    
   }
+  
   .stay-container {
     display: flex;
     justify-content: space-between;
@@ -68,18 +240,14 @@
     font-weight: 600;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
 
   }
     
     .stay-updated p {
       margin-bottom: 10px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-        font-size: 1.9rem;
-        color: #505050;
-}
-    
+      
+    }
     
     .stay-updated form {
       display: flex;
@@ -89,14 +257,15 @@
       padding-bottom: 15px;
       
     }
+    .stay-updated p {
+        font-size: 1.2rem;
+    }
     
     .stay-updated input[type="email"] {
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
       cursor: pointer;
-      height: 160%;
-      
     }
     
     .stay-updated button {
@@ -106,8 +275,6 @@
       border: none;
       cursor: pointer;
       border-radius: 5px;
-      height: 160%;
-     
     }
     
     .download-apps .app-icons {
@@ -180,7 +347,6 @@
   .footer .column h3 {
     /* border-bottom: 1px solid white; */
     padding-bottom: 10px;
-    font-size: 2.2rem;
   }
   .footer .column ul {
     list-style: none;
@@ -192,7 +358,6 @@
   .footer .column ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.9rem;
   }
   .footer .column ul li a:hover {
     text-decoration: underline;
@@ -247,11 +412,13 @@
   .header-left nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
     /* margin: 0 10px; */
-    font-size: 1.9rem;
-    
 
   }
+.column ul li a {
+    font-size: 1.2rem;
+}
 
  
   .header-right p {
@@ -265,12 +432,12 @@
   }
   .copy-right {
     color: #fff;
-    font-size: 1.9rem;
-    padding-top: 20px;
+    padding-top: 15px;
+    font-size: 1.2rem;
 
   }
   .header-right p {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     color: #fff;
   }
   .header-center p {

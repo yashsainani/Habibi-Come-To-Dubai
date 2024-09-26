@@ -1035,15 +1035,21 @@ html::-webkit-scrollbar-thumb {
     }
     
   .stay-update-heading {
-    font-weight: 400;
+    font-weight: 600;
     padding-top: 25px;
     padding-bottom: 25px;
+    font-size: 2.8rem;
 
   }
     
     .stay-updated p {
       margin-bottom: 10px;
-    }
+      padding-top: 25px;
+      padding-bottom: 25px;
+        font-size: 1.9rem;
+        color: #505050;
+}
+    
     
     .stay-updated form {
       display: flex;
@@ -1059,6 +1065,8 @@ html::-webkit-scrollbar-thumb {
       border: 1px solid #ccc;
       border-radius: 5px;
       cursor: pointer;
+      height: 160%;
+      
     }
     
     .stay-updated button {
@@ -1068,6 +1076,8 @@ html::-webkit-scrollbar-thumb {
       border: none;
       cursor: pointer;
       border-radius: 5px;
+      height: 160%;
+     
     }
     
     .download-apps .app-icons {
@@ -1140,6 +1150,7 @@ html::-webkit-scrollbar-thumb {
   .footer .column h3 {
     /* border-bottom: 1px solid white; */
     padding-bottom: 10px;
+    font-size: 2.2rem;
   }
   .footer .column ul {
     list-style: none;
@@ -1151,6 +1162,7 @@ html::-webkit-scrollbar-thumb {
   .footer .column ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.9rem;
   }
   .footer .column ul li a:hover {
     text-decoration: underline;
@@ -1161,7 +1173,7 @@ html::-webkit-scrollbar-thumb {
     border-top: 1px solid hsla(0, 0%, 100%, .2);
     overflow: hidden;
  }
-  @media screen and (max-width: 1370px) {
+  @media screen and (max-width: 1000px) {
     .logo {
       display: none;
     }
@@ -1183,6 +1195,9 @@ html::-webkit-scrollbar-thumb {
     .stay-container {
       flex-direction: column;
     }
+    .column {
+        /* flex-direction: row; */
+    }
     
   }
 
@@ -1192,9 +1207,7 @@ html::-webkit-scrollbar-thumb {
   .header-container {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* text-align: center; */
-    /* padding: 0 20px; */
+
     padding-bottom: 50px; 
     padding-left: 10px;
     padding-right: 10px;
@@ -1205,6 +1218,8 @@ html::-webkit-scrollbar-thumb {
     color: white;
     text-decoration: none;
     /* margin: 0 10px; */
+    font-size: 1.9rem;
+    
 
   }
 
@@ -1220,14 +1235,16 @@ html::-webkit-scrollbar-thumb {
   }
   .copy-right {
     color: #fff;
+    font-size: 1.9rem;
+    padding-top: 20px;
 
   }
   .header-right p {
-    font-size: 14px;
+    font-size: 1.9rem;
     color: #fff;
   }
   .header-center p {
-    font-size: 14px;
+    font-size: 1.2rem;
     color: #fff;
   }
   nav a:hover {
