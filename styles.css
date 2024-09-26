@@ -41,6 +41,12 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
+@media screen and (max-width:210px) {
+    .up-btn {
+        left: 50%;
+    }
+}
+
 .up-btn  a {
     color: #035e88;
     font-size: 2rem;
@@ -1725,7 +1731,6 @@ transition: color 0.3s ease-in-out;
 }
 .learn-more {
     display: flex;
-    justify-content: ;
     gap: 12rem;
     font-weight: bold;
     margin-left: -20rem;
