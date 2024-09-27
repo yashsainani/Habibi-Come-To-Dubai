@@ -60,9 +60,6 @@ This project was assigned by <a href="#"><u>Geekster</u></a> as a Major Project 
  #### <span style="color:#ef00ff">2. CSS  
 <ul>Applied for styling and layout with different CSS properties </ul>
 
-#### <span style="color:#ef00ff">3. JAVASCRIPT 
-<ul>JavaScript is a dynamic programming language that is used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.</ul>
-
  #### <span style="color:#ef00ff">4. FONT AWESOME 
 <ul>Font Awesome is a comprehensive icon library that offers a vast selection of icons for various purposes, such as user interface design, web development and graphic design.
 
