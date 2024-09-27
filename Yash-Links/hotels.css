@@ -485,14 +485,14 @@ html {
     border-bottom-right-radius: 10rem;
 }
 
-.concert-btn {
+.hotel-btn {
     width: 100%;
     padding: 1% 3% 1.2%;
     display: flex;
     gap: 2%;
 }
 
-.concert-btn button {
+.hotel-btn button {
     background-color: rgb(235, 235, 235);
     width: 50%;
     padding: 1.2%;
@@ -502,11 +502,11 @@ html {
     transition: background-color 0.3s ease-in-out;
 }
 
-.concert-btn button:hover {
+.hotel-btn button:hover {
     background-color: rgb(226, 226, 226);
 }
 
-.concert-btn button a {
+.hotel-btn button a {
     text-decoration: none;
     font-size: 1.6rem;
     color: #035e88;
@@ -555,19 +555,19 @@ html {
     top: 0;
 }
 
-.summer-concerts, .winter-concerts {
+.now-open, .coming-soon {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 3%;
 }
 
-.summer-concerts > h1, .winter-concerts > h1 {
+.now-open > h1, .coming-soon > h1 {
     font-size: 3.2rem;
     color: #000000b4;
 }
 
-.summer-concerts > p, .winter-concerts > p {
+.now-open > p, .coming-soon > p {
     font-size: 2.4rem;
     color: #00000094;
 }
@@ -653,6 +653,12 @@ html {
     font-size: 1.6rem;
     color: #00000094;
 }
+
+.cards > span {
+    font-size: 1.4rem;
+    color: #00000095;
+}
+
 .address {
     display: flex;
     flex-direction: column;
@@ -676,7 +682,7 @@ html {
     color: #00000094;
 }
 
-.date, .place {
+.place {
     display: flex;
     gap: 1rem;
     font-size: 1.6rem;
