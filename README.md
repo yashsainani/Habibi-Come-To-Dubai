@@ -193,6 +193,8 @@ Throughout the development of our project, our team encountered various challeng
 - Encountering and solving errors enhanced problem-solving skills among team members.
 
 
+## :mentor:<span style="color:#29c4f6"> Thanks to our Mentor Chirag Kapil for assisting us.
+
 
 ## :books:<span style="color:#29c4f6">REFERENCES 
 <ul type=circle>
